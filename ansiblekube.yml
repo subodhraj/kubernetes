@@ -5,11 +5,11 @@
 
 - name: deploy to kubernetes deployment
   command: kubectl apply -f deploy.yml
-    args:
-       chdir: /var/lib/jenkins/workspace/Deploy2K8s
+     args:
+        chdir: /var/lib/jenkins/workspace/Deploy2K8s
 
 - name: deploy kubernetes service
   command: kubectl apply -f service.yml
-    args:
-       chdir: /var/lib/jenkins/workspace/Deploy2K8s
+     args:
+        chdir: /var/lib/jenkins/workspace/Deploy2K8s
 
